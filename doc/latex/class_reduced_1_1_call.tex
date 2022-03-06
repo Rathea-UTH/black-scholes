@@ -1,0 +1,183 @@
+\hypertarget{class_reduced_1_1_call}{}\doxysection{Reduced\+::Call Class Reference}
+\label{class_reduced_1_1_call}\index{Reduced::Call@{Reduced::Call}}
+
+
+Il s\textquotesingle{}agit d\textquotesingle{}un type particulier d\textquotesingle{}option, ce qui se traduit par un héritage\+: \mbox{\hyperlink{class_reduced_1_1_call}{Call}} est une classe fille de \mbox{\hyperlink{class_payoff}{Payoff}}.  
+
+
+
+
+{\ttfamily \#include $<$Call.\+h$>$}
+
+Inheritance diagram for Reduced\+::Call\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_reduced_1_1_call}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_reduced_1_1_call_af8a582fc065bef2e762121e3f30be13e}{Call}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut d\textquotesingle{}une classe \mbox{\hyperlink{class_reduced_1_1_call}{Call}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_reduced_1_1_call_a860ae7211b5ff7f9743b32861db1b020}{Call}} (double K, double r, double sigma, double T, double L, int N, int M)
+\begin{DoxyCompactList}\small\item\em le constructeur d\textquotesingle{}une classe \mbox{\hyperlink{class_reduced_1_1_call}{Call}} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_reduced_1_1_call_a9d18be38924d3c6ed0e61d845d0e0430}{stilde}} (double s, double t) const
+\item 
+double \mbox{\hyperlink{class_reduced_1_1_call_a992490b32e2d168be2350e26fc23c298}{ttilde}} (int m) const
+\begin{DoxyCompactList}\small\item\em Discrétisation des t\+\_\+tildes avec un pas régulier. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_reduced_1_1_call_a359bddd63d2ef6b62bc2d819ea8f6f54}{stilde}} (int i) const
+\begin{DoxyCompactList}\small\item\em Discrétisation des s\+\_\+tildes avec un pas régulier. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_reduced_1_1_call_a35dd3de26fb11c29953d67c88c87cd5f}{C\+\_\+stildeN}} (double \mbox{\hyperlink{class_reduced_1_1_call_a992490b32e2d168be2350e26fc23c298}{ttilde}}) const
+\item 
+double \mbox{\hyperlink{class_reduced_1_1_call_aa09a66c6be536597932ce6658420c4ac}{C\+\_\+stilde0}} (double \mbox{\hyperlink{class_reduced_1_1_call_a992490b32e2d168be2350e26fc23c298}{ttilde}}) const
+\item 
+double \mbox{\hyperlink{class_reduced_1_1_call_a1885a6b5cd16d4356adb205b21de291a}{C\+\_\+ttilde0}} (double \mbox{\hyperlink{class_reduced_1_1_call_a9d18be38924d3c6ed0e61d845d0e0430}{stilde}}) const
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_reduced_1_1_call_a6645c8dd2fa63e1490df5b3109bdd637}{C\+\_\+t0}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Il s\textquotesingle{}agit d\textquotesingle{}un type particulier d\textquotesingle{}option, ce qui se traduit par un héritage\+: \mbox{\hyperlink{class_reduced_1_1_call}{Call}} est une classe fille de \mbox{\hyperlink{class_payoff}{Payoff}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_reduced_1_1_call_af8a582fc065bef2e762121e3f30be13e}\label{class_reduced_1_1_call_af8a582fc065bef2e762121e3f30be13e}} 
+\index{Reduced::Call@{Reduced::Call}!Call@{Call}}
+\index{Call@{Call}!Reduced::Call@{Reduced::Call}}
+\doxysubsubsection{\texorpdfstring{Call()}{Call()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Reduced\+::\+Call\+::\+Call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur par défaut d\textquotesingle{}une classe \mbox{\hyperlink{class_reduced_1_1_call}{Call}}. 
+
+Les valeurs des paramètres sont initialisées avec celles fournies dans l\textquotesingle{}énoncé. \mbox{\Hypertarget{class_reduced_1_1_call_a860ae7211b5ff7f9743b32861db1b020}\label{class_reduced_1_1_call_a860ae7211b5ff7f9743b32861db1b020}} 
+\index{Reduced::Call@{Reduced::Call}!Call@{Call}}
+\index{Call@{Call}!Reduced::Call@{Reduced::Call}}
+\doxysubsubsection{\texorpdfstring{Call()}{Call()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Reduced\+::\+Call\+::\+Call (\begin{DoxyParamCaption}\item[{double}]{K,  }\item[{double}]{r,  }\item[{double}]{sigma,  }\item[{double}]{T,  }\item[{double}]{L,  }\item[{int}]{N,  }\item[{int}]{M }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+le constructeur d\textquotesingle{}une classe \mbox{\hyperlink{class_reduced_1_1_call}{Call}} 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_reduced_1_1_call_aa09a66c6be536597932ce6658420c4ac}\label{class_reduced_1_1_call_aa09a66c6be536597932ce6658420c4ac}} 
+\index{Reduced::Call@{Reduced::Call}!C\_stilde0@{C\_stilde0}}
+\index{C\_stilde0@{C\_stilde0}!Reduced::Call@{Reduced::Call}}
+\doxysubsubsection{\texorpdfstring{C\_stilde0()}{C\_stilde0()}}
+{\footnotesize\ttfamily double Reduced\+::\+Call\+::\+C\+\_\+stilde0 (\begin{DoxyParamCaption}\item[{double}]{ttilde }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ttilde} & un flottant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La valeur du payoff associé à ttilde lorsque stilde=-\/infini (vaut toujours 0 pour un call) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_reduced_1_1_call_a35dd3de26fb11c29953d67c88c87cd5f}\label{class_reduced_1_1_call_a35dd3de26fb11c29953d67c88c87cd5f}} 
+\index{Reduced::Call@{Reduced::Call}!C\_stildeN@{C\_stildeN}}
+\index{C\_stildeN@{C\_stildeN}!Reduced::Call@{Reduced::Call}}
+\doxysubsubsection{\texorpdfstring{C\_stildeN()}{C\_stildeN()}}
+{\footnotesize\ttfamily double Reduced\+::\+Call\+::\+C\+\_\+stildeN (\begin{DoxyParamCaption}\item[{double}]{ttilde }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ttilde} & un flottant indiquant l\textquotesingle{}instant en lequel est évalué le payoff lorsque s\+\_\+tilde atteint la borne supérieure de son intervalle (s\+\_\+tilde = log(L/K)+(r-\/sigma$^\wedge$2/2)ttilde) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La valeur associée du payoff à l\textquotesingle{}instant ttilde ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_reduced_1_1_call_a6645c8dd2fa63e1490df5b3109bdd637}\label{class_reduced_1_1_call_a6645c8dd2fa63e1490df5b3109bdd637}} 
+\index{Reduced::Call@{Reduced::Call}!C\_t0@{C\_t0}}
+\index{C\_t0@{C\_t0}!Reduced::Call@{Reduced::Call}}
+\doxysubsubsection{\texorpdfstring{C\_t0()}{C\_t0()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Reduced\+::\+Call\+::\+C\+\_\+t0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+Un vecteur de taille N-\/1 contenant les valeurs du payoff à l\textquotesingle{}instant 0 en chaque point de l\textquotesingle{}espace\+: C(0,s\+\_\+1),...,C(0,s\+\_\+\{N-\/1\}) 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Les conditions aux bords C(0,s\+\_\+0) et C(0,\+L) sont déjà connues, donc ne sont pas incluses dans le vecteur retourné 
+\end{DoxyWarning}
+
+
+Implements \mbox{\hyperlink{class_payoff_aa551f686ea7edbd897365d66b6dc8fcf}{Payoff}}.
+
+\mbox{\Hypertarget{class_reduced_1_1_call_a1885a6b5cd16d4356adb205b21de291a}\label{class_reduced_1_1_call_a1885a6b5cd16d4356adb205b21de291a}} 
+\index{Reduced::Call@{Reduced::Call}!C\_ttilde0@{C\_ttilde0}}
+\index{C\_ttilde0@{C\_ttilde0}!Reduced::Call@{Reduced::Call}}
+\doxysubsubsection{\texorpdfstring{C\_ttilde0()}{C\_ttilde0()}}
+{\footnotesize\ttfamily double Reduced\+::\+Call\+::\+C\+\_\+ttilde0 (\begin{DoxyParamCaption}\item[{double}]{stilde }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em stilde} & un flottant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La valeur du payoff associé à stilde lorsque ttilde = 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_reduced_1_1_call_a9d18be38924d3c6ed0e61d845d0e0430}\label{class_reduced_1_1_call_a9d18be38924d3c6ed0e61d845d0e0430}} 
+\index{Reduced::Call@{Reduced::Call}!stilde@{stilde}}
+\index{stilde@{stilde}!Reduced::Call@{Reduced::Call}}
+\doxysubsubsection{\texorpdfstring{stilde()}{stilde()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Reduced\+::\+Call\+::stilde (\begin{DoxyParamCaption}\item[{double}]{s,  }\item[{double}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & un flottant indiquant le \char`\"{}point de l\textquotesingle{}espace\char`\"{} en lequel le payoff est évalué à l\textquotesingle{}instant T \\
+\hline
+{\em t} & un flottant indiquant l\textquotesingle{}instant en lequel est évalué le payoff \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La valeur du payoff associée au couple (s,t) 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+s doit être supérieur strictement à 0. Pour s=0, stilde=-\/infini 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_reduced_1_1_call_a359bddd63d2ef6b62bc2d819ea8f6f54}\label{class_reduced_1_1_call_a359bddd63d2ef6b62bc2d819ea8f6f54}} 
+\index{Reduced::Call@{Reduced::Call}!stilde@{stilde}}
+\index{stilde@{stilde}!Reduced::Call@{Reduced::Call}}
+\doxysubsubsection{\texorpdfstring{stilde()}{stilde()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Reduced\+::\+Call\+::stilde (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Discrétisation des s\+\_\+tildes avec un pas régulier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & un integer indiquant le numéro du point désiré \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le i ième point de l\textquotesingle{}intervalle des stildes discrétisé avec un pas constant en N segments 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_reduced_1_1_call_a992490b32e2d168be2350e26fc23c298}\label{class_reduced_1_1_call_a992490b32e2d168be2350e26fc23c298}} 
+\index{Reduced::Call@{Reduced::Call}!ttilde@{ttilde}}
+\index{ttilde@{ttilde}!Reduced::Call@{Reduced::Call}}
+\doxysubsubsection{\texorpdfstring{ttilde()}{ttilde()}}
+{\footnotesize\ttfamily double Reduced\+::\+Call\+::ttilde (\begin{DoxyParamCaption}\item[{int}]{m }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Discrétisation des t\+\_\+tildes avec un pas régulier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & un integer indiquant le numéro du point temporel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le m ième point de l\textquotesingle{}intervalle \mbox{[}0,T\mbox{]} discrétisé avec un pas constant en M segments ~\newline
+ 
+\end{DoxyReturn}

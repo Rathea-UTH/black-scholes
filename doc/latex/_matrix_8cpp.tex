@@ -1,0 +1,95 @@
+\hypertarget{_matrix_8cpp}{}\doxysection{/\+Users/themacstore/\+Documents/\+S3/\+C++/\+Projet/\+Code/blackscholes/\+Payoff/\+Matrix.cpp File Reference}
+\label{_matrix_8cpp}\index{/Users/themacstore/Documents/S3/C++/Projet/Code/blackscholes/Payoff/Matrix.cpp@{/Users/themacstore/Documents/S3/C++/Projet/Code/blackscholes/Payoff/Matrix.cpp}}
+{\ttfamily \#include \char`\"{}Matrix.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_matrix}{Matrix}} \&m)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher le contenu d\textquotesingle{}une matrice. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{_matrix_8cpp_a0d5b6746b98fb0b3ef41bb42fc555577}{operator$\ast$}} (const \mbox{\hyperlink{class_matrix}{Matrix}} \&m, const std\+::vector$<$ double $>$ \&v)
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{_matrix_8cpp_ad7bd11ab8f910f81991d11e63a65e547}{solve}} (const \mbox{\hyperlink{class_matrix}{Matrix}} \&A, const std\+::vector$<$ double $>$ \&b)
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{_matrix_8cpp_a12b75c519ccce9ce9430822990f74838}{operator+}} (const std\+::vector$<$ double $>$ \&v1, const std\+::vector$<$ double $>$ \&v2)
+\item 
+std\+::ostream \& \mbox{\hyperlink{_matrix_8cpp_a639bf92e9b75aee53642ac5aec42fc9c}{operator$<$$<$}} (std\+::ostream \&os, const std\+::vector$<$ double $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher le contenu d\textquotesingle{}un vecteur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_matrix_8cpp_a0d5b6746b98fb0b3ef41bb42fc555577}\label{_matrix_8cpp_a0d5b6746b98fb0b3ef41bb42fc555577}} 
+\index{Matrix.cpp@{Matrix.cpp}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix.cpp@{Matrix.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_matrix}{Matrix}} \&}]{m,  }\item[{const std\+::vector$<$ double $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & une référence à une matrice \\
+\hline
+{\em v} & une référence à un vecteur de flottants \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur résultant du produit matriciel entre m et v 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+le nombre de colonnes de m doit être égale au nombre de lignes de v 
+\end{DoxyWarning}
+\mbox{\Hypertarget{_matrix_8cpp_a12b75c519ccce9ce9430822990f74838}\label{_matrix_8cpp_a12b75c519ccce9ce9430822990f74838}} 
+\index{Matrix.cpp@{Matrix.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix.cpp@{Matrix.cpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ operator+ (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{v1,  }\item[{const std\+::vector$<$ double $>$ \&}]{v2 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & un vecteur de flottants \\
+\hline
+{\em v2} & un autre vecteur de flottants \\
+\hline
+{\em v} & le vecteur somme de v1 et v2, tel que\+: v\mbox{[}i\mbox{]}=v1\mbox{[}i\mbox{]}+v2\mbox{[}i\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+v1 et v2 doivent avoir le même nombre d\textquotesingle{}éléments 
+\end{DoxyWarning}
+\mbox{\Hypertarget{_matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7}\label{_matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7}} 
+\index{Matrix.cpp@{Matrix.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Matrix.cpp@{Matrix.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_matrix}{Matrix}} \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}afficher le contenu d\textquotesingle{}une matrice. 
+
+\mbox{\Hypertarget{_matrix_8cpp_a639bf92e9b75aee53642ac5aec42fc9c}\label{_matrix_8cpp_a639bf92e9b75aee53642ac5aec42fc9c}} 
+\index{Matrix.cpp@{Matrix.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Matrix.cpp@{Matrix.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const std\+::vector$<$ double $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}afficher le contenu d\textquotesingle{}un vecteur. 
+
+\mbox{\Hypertarget{_matrix_8cpp_ad7bd11ab8f910f81991d11e63a65e547}\label{_matrix_8cpp_ad7bd11ab8f910f81991d11e63a65e547}} 
+\index{Matrix.cpp@{Matrix.cpp}!solve@{solve}}
+\index{solve@{solve}!Matrix.cpp@{Matrix.cpp}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ solve (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_matrix}{Matrix}} \&}]{A,  }\item[{const std\+::vector$<$ double $>$ \&}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & une matrice tridiagonale admettant une décomposition LU \\
+\hline
+{\em b} & un vecteur colonne \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le vecteur solution de l\textquotesingle{}equation Ax=b en tirant profit de A=LU 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+A doit impérativement être tridiagonale. Être LU-\/décomposable n\textquotesingle{}est pas suffisant 
+\end{DoxyWarning}

@@ -1,0 +1,120 @@
+\hypertarget{class_complete_1_1_call}{}\doxysection{Complete\+::Call Class Reference}
+\label{class_complete_1_1_call}\index{Complete::Call@{Complete::Call}}
+
+
+Il s\textquotesingle{}agit d\textquotesingle{}un type particulier d\textquotesingle{}option, ce qui se traduit par un héritage\+: \mbox{\hyperlink{class_complete_1_1_call}{Call}} est une classe fille de \mbox{\hyperlink{class_payoff}{Payoff}}.  
+
+
+
+
+{\ttfamily \#include $<$Call.\+h$>$}
+
+Inheritance diagram for Complete\+::Call\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_complete_1_1_call}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_complete_1_1_call_a853d72731a0d6240507b1b1804f57edf}{Call}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut d\textquotesingle{}une classe \mbox{\hyperlink{class_complete_1_1_call}{Call}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_complete_1_1_call_aea46e59f09a9d136451ce25f0982a667}{Call}} (double K, double r, double sigma, double T, double L, int N, int M)
+\begin{DoxyCompactList}\small\item\em le constructeur avec paramètres d\textquotesingle{}une classe \mbox{\hyperlink{class_complete_1_1_call}{Call}} \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_complete_1_1_call_a23815fe5642af8e55b1fb08551153e0a}{C\+\_\+T}} (double s) const
+\item 
+double \mbox{\hyperlink{class_complete_1_1_call_a4688057d283abea42a55659980d25160}{C\+\_\+L}} (double t) const
+\item 
+double \mbox{\hyperlink{class_complete_1_1_call_a6d5495c7f35061d975fb7ff3907b370d}{C\+\_\+s0}} (double t) const
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{class_complete_1_1_call_a10f44635358bff036783c64b4146b78d}{C\+\_\+t0}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Il s\textquotesingle{}agit d\textquotesingle{}un type particulier d\textquotesingle{}option, ce qui se traduit par un héritage\+: \mbox{\hyperlink{class_complete_1_1_call}{Call}} est une classe fille de \mbox{\hyperlink{class_payoff}{Payoff}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_complete_1_1_call_a853d72731a0d6240507b1b1804f57edf}\label{class_complete_1_1_call_a853d72731a0d6240507b1b1804f57edf}} 
+\index{Complete::Call@{Complete::Call}!Call@{Call}}
+\index{Call@{Call}!Complete::Call@{Complete::Call}}
+\doxysubsubsection{\texorpdfstring{Call()}{Call()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Complete\+::\+Call\+::\+Call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur par défaut d\textquotesingle{}une classe \mbox{\hyperlink{class_complete_1_1_call}{Call}}. 
+
+Les valeurs des paramètres sont initialisées avec celles fournies dans l\textquotesingle{}énoncé. \mbox{\Hypertarget{class_complete_1_1_call_aea46e59f09a9d136451ce25f0982a667}\label{class_complete_1_1_call_aea46e59f09a9d136451ce25f0982a667}} 
+\index{Complete::Call@{Complete::Call}!Call@{Call}}
+\index{Call@{Call}!Complete::Call@{Complete::Call}}
+\doxysubsubsection{\texorpdfstring{Call()}{Call()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Complete\+::\+Call\+::\+Call (\begin{DoxyParamCaption}\item[{double}]{K,  }\item[{double}]{r,  }\item[{double}]{sigma,  }\item[{double}]{T,  }\item[{double}]{L,  }\item[{int}]{N,  }\item[{int}]{M }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+le constructeur avec paramètres d\textquotesingle{}une classe \mbox{\hyperlink{class_complete_1_1_call}{Call}} 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_complete_1_1_call_a4688057d283abea42a55659980d25160}\label{class_complete_1_1_call_a4688057d283abea42a55659980d25160}} 
+\index{Complete::Call@{Complete::Call}!C\_L@{C\_L}}
+\index{C\_L@{C\_L}!Complete::Call@{Complete::Call}}
+\doxysubsubsection{\texorpdfstring{C\_L()}{C\_L()}}
+{\footnotesize\ttfamily double Complete\+::\+Call\+::\+C\+\_\+L (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & un flottant indiquant l\textquotesingle{}instant en lequel est évalué le payoff lorsque s=L \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La valeur du payoff à l\textquotesingle{}instant t, en s=L 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_complete_1_1_call_a6d5495c7f35061d975fb7ff3907b370d}\label{class_complete_1_1_call_a6d5495c7f35061d975fb7ff3907b370d}} 
+\index{Complete::Call@{Complete::Call}!C\_s0@{C\_s0}}
+\index{C\_s0@{C\_s0}!Complete::Call@{Complete::Call}}
+\doxysubsubsection{\texorpdfstring{C\_s0()}{C\_s0()}}
+{\footnotesize\ttfamily double Complete\+::\+Call\+::\+C\+\_\+s0 (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & un flottant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la valeur du payoff en s=0 (=0 pour un put) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_complete_1_1_call_a23815fe5642af8e55b1fb08551153e0a}\label{class_complete_1_1_call_a23815fe5642af8e55b1fb08551153e0a}} 
+\index{Complete::Call@{Complete::Call}!C\_T@{C\_T}}
+\index{C\_T@{C\_T}!Complete::Call@{Complete::Call}}
+\doxysubsubsection{\texorpdfstring{C\_T()}{C\_T()}}
+{\footnotesize\ttfamily double Complete\+::\+Call\+::\+C\+\_\+T (\begin{DoxyParamCaption}\item[{double}]{s }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & un flottant indiquant le \char`\"{}point de l\textquotesingle{}espace\char`\"{} en lequel le payoff est évalué à l\textquotesingle{}instant T \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La valeur du payoff associée au couple (s,T) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_complete_1_1_call_a10f44635358bff036783c64b4146b78d}\label{class_complete_1_1_call_a10f44635358bff036783c64b4146b78d}} 
+\index{Complete::Call@{Complete::Call}!C\_t0@{C\_t0}}
+\index{C\_t0@{C\_t0}!Complete::Call@{Complete::Call}}
+\doxysubsubsection{\texorpdfstring{C\_t0()}{C\_t0()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Complete\+::\+Call\+::\+C\+\_\+t0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+Un vecteur de taille N-\/1 contenant les valeurs du payoff à l\textquotesingle{}instant 0 en chaque point de l\textquotesingle{}espace\+: C(0,s\+\_\+1),...,C(0,s\+\_\+\{N-\/1\}) 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Les conditions aux bords C(0,s\+\_\+0) et C(0,\+L) sont déjà connues, donc ne sont pas incluses dans le vecteur retourné 
+\end{DoxyWarning}
+
+
+Implements \mbox{\hyperlink{class_payoff_aa551f686ea7edbd897365d66b6dc8fcf}{Payoff}}.
+
